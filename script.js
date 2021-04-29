@@ -207,13 +207,14 @@ const compareAttributes = () => {
         gameState();
     }
 }
-
-while (player1Hand.length > 0 && player2Hand.length > 0) {
-    compareAttributes();
-    console.log(`\n\nplayer 1: ${player1Hand.length}\nplayer 2: ${player2Hand.length}\n\n`);
-}
-if (player1Hand[0] == undefined) {
-    console.log("\nPlayer 2 has won!");
-} else if (player2Hand[0] == undefined) {
-    console.log("\nPlayer1 has won!");
-}
+window.addEventListener("keypress", () => {
+    while (player1Hand.length > 0 && player2Hand.length > 0) {
+        compareAttributes();
+        console.log(`\n\nplayer 1: ${player1Hand.length}\nplayer 2: ${player2Hand.length}\n\n`);
+    }
+    if (player1Hand[0] == undefined) {
+        console.log("\nPlayer 2 has won!");
+    } else if (player2Hand[0] == undefined) {
+        console.log("\nPlayer1 has won!");
+    }
+})

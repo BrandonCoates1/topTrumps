@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    height: 100%;
+    width: 99%;
+    justify-content: center;
+    margin-top: 40vh;
+    font-size: 3vw;
+    text-align: center;
+}
